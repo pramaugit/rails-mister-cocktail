@@ -1,0 +1,12 @@
+
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Name:</strong>
+  <%= @cocktail.name %>
+</p>
+<%= render 'doses/new', dose: @dose, cocktail: @cocktail %>bnb
+
+
+<%= link_to 'Edit', edit_cocktail_path(@cocktail) %> |
+<%= link_to 'Back', cocktails_path %>
+

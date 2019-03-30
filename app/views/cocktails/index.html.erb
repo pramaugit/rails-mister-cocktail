@@ -16,6 +16,7 @@
   <tbody>
     <% @cocktails.each do |cocktail| %>
       <tr>
+        <%= cl_image_tag cocktail.photo %>
         <td><%= cocktail.name %></td>
         <td><%= link_to 'Show', cocktail %></td>
         <td><%= link_to 'Edit', edit_cocktail_path(cocktail) %></td>
